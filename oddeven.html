@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <h1>find odd or even</h1>
+    <input type="number" class="num" placeholder="enter a numberr" />
+    <button onclick="odd()">find</button>
+    <p class="result"></p>
+    <a href="math.html"> go back</a>
+  </body>
+  <script>
+    function odd() {
+      sum = document.querySelector(".num").value % 2;
+
+      let o = "odd";
+      let e = "even";
+
+      if (sum == 0) {
+        document.querySelector(".result").innerHTML = e;
+      } else {
+        document.querySelector(".result").innerHTML = o;
+      }
+    }
+  </script>
+</html>

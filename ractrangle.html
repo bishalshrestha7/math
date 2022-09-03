@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <h1>find area of ractangle</h1>
+    <input type="number" class="len" placeholder="enter length" />
+    <input type="number" class="bre" placeholder="enter breadth" />
+    <button onclick="areaR()">find area</button>
+    <p class="result"></p>
+    <a href="math.html"> go back</a>
+  </body>
+  <script>
+    function areaR() {
+      var area =
+        document.querySelector(".len").value *
+        document.querySelector(".bre").value;
+
+      document.querySelector(".result").innerHTML = area;
+    }
+  </script>
+</html>
